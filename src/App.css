@@ -1,4 +1,4 @@
-
+/* 
 .wrapper{
     padding: 50px;
     display: flex;
@@ -25,4 +25,41 @@
 .form select,
 .form input{
     padding: 10px;
+} */
+.container{
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #ddd;
+}
+.navbar__logo{
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+}
+.navbar__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+.navLink__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navLink__wrapper a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.navbar__wrapper a.active{
+    color: blue;
 }

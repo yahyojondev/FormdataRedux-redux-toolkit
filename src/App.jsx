@@ -6,17 +6,11 @@ import Navbar from "./components/navbar/Navbar";
 import SignUp from "./pages/sign-up/SignUp";
 import Users from "./pages/users/Users";
 import Product from "./pages/product/Product";
-// import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Link to={"/"}>Home</Link>
-      <Link to={"/about"}>About</Link>
-      <Link to={"/users"}>Users</Link>
-      <Link to={"/product"}>Product</Link>
-      <Link to={"/sign-up"}>Sign-up</Link>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
