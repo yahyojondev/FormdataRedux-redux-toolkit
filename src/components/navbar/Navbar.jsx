@@ -1,6 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo-md.png";
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { IoVideocamOutline } from "react-icons/io5";
+import { PiBellSimpleRingingBold } from "react-icons/pi";
 
 const Navbar = () => {
   return (
@@ -15,6 +18,11 @@ const Navbar = () => {
             <NavLink to={"/admin"}>Admin</NavLink>
             <NavLink to={"/sign-up"}>SignUp</NavLink>
             <NavLink to={"/users"}>Users</NavLink>
+          </div>
+          <div className="icons__wrapper">
+            <IoVideocamOutline />
+            <PiBellSimpleRingingBold />
+            <IoPersonCircleSharp />
           </div>
         </div>
       </div>

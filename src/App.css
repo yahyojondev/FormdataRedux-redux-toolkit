@@ -30,7 +30,6 @@
     width: 100%;
     max-width: 1420px;
     margin: 0 auto;
-    padding: 0px 20px;
 }
 .navbar{
     display: flex;
@@ -47,7 +46,7 @@
 .navbar__wrapper{
     display: flex;
     align-items: center;
-    gap: 200px;
+    justify-content: space-between;
 }
 .navLink__wrapper{
     display: flex;
@@ -58,8 +57,19 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
+    color: gray;
     font-family: sans-serif;
 }
 .navbar__wrapper a.active{
     color: blue;
+}
+.icons__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.icons__wrapper svg{
+    font-size: 25px;
+    color: rgb(7, 7, 72);
 }
