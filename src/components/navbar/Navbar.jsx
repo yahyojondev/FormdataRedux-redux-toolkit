@@ -13,8 +13,10 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/images/logo-md.png";
+import "./navbar.css";
 
-const pages = ["Products", "Pricing", "About", "Users", "Sign-up"];
+const pages = ["Products", "Pricing", "About", "Users", "Admin", "Sign-up"];
 const settings = ["Profile", "Account", "Dashboard", "Help", "Logout"];
 
 function Navbar() {
@@ -37,12 +39,11 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar className="navbar" position="static">
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar className="navbar__wrapper" disableGutters>
           <NavLink className="navbar__logo" to="/">
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-            LOGO
+            <img className="navbar__logo" src={logo} alt="" />
           </NavLink>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -82,7 +83,6 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -98,9 +98,7 @@ function Navbar() {
               color: "inherit",
               textDecoration: "none",
             }}
-          >
-            LOGO
-          </Typography>
+          ></Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((el) => (
               <NavLink
@@ -117,7 +115,6 @@ function Navbar() {
               </NavLink>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

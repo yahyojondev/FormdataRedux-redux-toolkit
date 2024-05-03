@@ -6,12 +6,12 @@ import Navbar from "./components/navbar/Navbar";
 import SignUp from "./pages/sign-up/SignUp";
 import Users from "./pages/users/Users";
 import Product from "./pages/product/Product";
+// import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
     <>
       <Navbar />
-      <h1>Redux Toolkit</h1>
       <Link to={"/"}>Home</Link>
       <Link to={"/about"}>About</Link>
       <Link to={"/users"}>Users</Link>
@@ -23,6 +23,7 @@ function App() {
         <Route path="/products" element={<Product />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/users" element={<Users />} />
+        {/* <Route path="/admin" element={<Admin />} /> */}
         <Route path="*" element={<h2>404</h2>} />
       </Routes>
     </>

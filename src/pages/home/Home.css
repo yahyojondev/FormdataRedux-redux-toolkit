@@ -1,0 +1,32 @@
+.dashboard__left{
+    padding: 40px 40px 40px 40px;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: rgb(7, 7, 72);
+    color: white;
+}
+.dashboard__title{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dashboard__content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dashboard__content__title{
+    padding: 10px;
+}
+.dashborad__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dashborad__list li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
