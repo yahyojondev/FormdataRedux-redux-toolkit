@@ -9,7 +9,7 @@ import { FaWpforms } from "react-icons/fa6";
 import { FaCalculator } from "react-icons/fa";
 import { FaCircleQuestion } from "react-icons/fa6";
 import { IoIosListBox } from "react-icons/io";
-// import { IconName } from "react-icons/go";
+import { BsClipboardDataFill } from "react-icons/bs";
 import { ImStatsDots } from "react-icons/im";
 import { GrUserSettings } from "react-icons/gr";
 import { TfiCup } from "react-icons/tfi";
@@ -41,7 +41,7 @@ const Home = () => {
             </li>
             <li className="dashboard__item">
               <FaWpforms />
-              Dars jadvali
+              <NavLink> Dars jadvali</NavLink>
             </li>
             <li className="dashboard__item">
               <FaCalculator />
@@ -56,7 +56,7 @@ const Home = () => {
               <NavLink> individual shaxsiy reja</NavLink>
             </li>
             <li className="dashboard__item">
-              {/* <IconName /> */}
+              <BsClipboardDataFill />
               <NavLink>Ma'lumot</NavLink>
             </li>
             <li className="dashboard__item">

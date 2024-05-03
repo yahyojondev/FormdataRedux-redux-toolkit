@@ -1,8 +1,10 @@
 .dashboard__left{
+    position: fixed;
+    left: 0;
     padding: 40px 40px 40px 40px;
     width: 100%;
     max-width: 300px;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(7, 7, 72);
     color: white;
 }
@@ -11,6 +13,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: sans-serif;
 }
 .dashboard__content{
     display: flex;
@@ -19,14 +22,23 @@
 }
 .dashboard__content__title{
     padding: 10px 10px 10px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
 }
 .dashborad__list{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    list-style: none;
 }
 .dashborad__list li{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
 }
