@@ -33,7 +33,7 @@ const Home = () => {
           <ul className=" dashborad__list">
             <li className="dashboard__item">
               <FaBook />
-              <NavLink>Fan Tanlovi</NavLink>
+              <NavLink to={"/about"}>Fan Tanlovi</NavLink>
             </li>
             <li className="dashboard__item">
               <FcReadingEbook />
